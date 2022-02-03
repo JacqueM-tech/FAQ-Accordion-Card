@@ -18,66 +18,112 @@
 
  /* General styles */
  body {
-     background: var(--soft-violet);
+     background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
      font-size: 16px;
+     font-family: 'Kumbh Sans', sans-serif;
+ }
+ main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 100%;
+     margin-top: 80px;
  }
  .card {
      display: flex;
-     flex-flow: column wrap;
      justify-content: center;
-     align-items: center;
-     width: 85%;
-     height: 100%;
-     background: var(--light-grayish-blue);
-     margin: auto;
-     border-radius: 10px;
-     margin-top: 150px;
+     max-width: 85%;
+     width: 100%;
+     background-color: white;
+     border-radius: 15px;
      position: relative;
  }
- .image {
-     width: 300px;
-     height: 300px;
-     margin-top: -136px;
+ .faq-image {
+    position: absolute;
+ }
+ .img-1 {
+     width: 250px;
+     height: 250px;
+     display: flex;
+     margin-top: -145px;
+ }
+ .img-2 {
+    width: 250px;
+    height: 110px;
+    margin-top: -175px;
  }
  .faq {
      display: flex;
      flex-flow: row wrap;
-     width: 90%;
-     margin-bottom: 70px;
+     justify-content: center;
+     align-items: center;
+     margin-top: 160px;
+     margin-bottom: 80px;
+     color: var(--very-dark-desaturated-blue);
  }
  h1 {
      font-size: 3rem;
      font-weight: 700;
-     margin-bottom: 50px;
+     margin-bottom: 35px;
+     
  }
  .question {
      display: flex;
-     line-height: 30px;
+     line-height: 60px;
+     border-bottom: .5px solid lightgray;
  }
  .question img {
      width: 10px;
      height: 10px;
-     margin-top: 10px;
-     margin-left: 30px;
+     margin-top: 25px;
+     
  }
+ .answers {
+     display: none;
+ } 
 
-.attribution {
-    padding-top: 50px;
-    width: 85%;
-    font-size: .9rem;
-    margin: auto;
-}
 
  /* TABLET STYLES */
- /* @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
+     .card {
+         width: 75%;
+     }
+     .img-1 {
+         width: 400px;
+         height: 400px;
+         margin-top: -230px;
+     }
+     .img-2 {
+         width: 400px;
+         height: 180px;
+         margin-top: -300px; 
+     }
+     .faq {
+         display: flex;
+         flex-flow: column wrap;
+         padding-top: 100px;
+     } 
    
- } */
+ }
 
  /* DESKTOP STYLES */
- /* @media screen and (min-width: 1440px){
+ @media screen and (min-width: 1440px){
+    .card {
+        width: 45%;
+    }
+    .faq-image {
+        margin-top: 20rem;
+        margin-right: 36rem;
+      
+    }
+    .faq {
+        padding-left: 350px;
+        margin-top: -50px;
+    }
     
      
  }
 
- */
+
 
